@@ -22,7 +22,6 @@ body{
 /* SITE HEADER */
 .site-header-wrapper{
     background-color: #F6F6F9;
-    margin-bottom: 300px;
     padding: 44px 0 23px;
 }
 .header-top{
@@ -142,101 +141,113 @@ body{
     line-height: 23px;
     margin-right: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav-menu{
-    width: 1150px;
-    background-color: #fff;
-    padding: 21px 25px;
-    margin-top: 44px;
-    margin-bottom: 18px;
-    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+/* MAIN */
+main{
+    padding: 22px 0 38px;
 }
-.menu-nav{
-    list-style: none;
+
+
+/* COVID */
+.covid-stats__container{
+    padding: 30px 35px;
+    background-color:#F6F6F9 ;
+    border-radius: 5px;
+}
+.covid-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin: 0;  
 }
-.menu-nav a{
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 23px;
-    color: #515151;
-    margin-right: 25px;
-}
-.menu-nav a:hover{
-    color: #295091;
-}
-.stats-covid-info{
-    width: 1165px;
+.covid-item__info{
+    width: 371px;
     display: flex;
-    margin: 0 auto;
-    padding: 40px 35px 40px 0;
     align-items: center;
-    background-color:#F6F6F9;
 }
-.stats-covid img{
-    margin-right: 25px;
-    margin-left: 30px;
-}
-.stats-covid p{
+.covid-info__title{
+    margin: 0;
+    margin-left: 25px;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    margin: 0;
 }
-.stats-covid b{
-    color: #000;
-    font-size: 24px;
+.covid-item::before{
+    content: "";
+    display: block;
+    width: 43px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-left: 29px;
 }
-.stats-covid{
+.covid-item__info::before{
+    background-image: url(../images/covid19.png);
+}
+.covid-item__case{
     display: flex;
     align-items: center;
 }
+.covid-item__case::before{
+    background-image: url(../images/corona-red.png);
+}
 
-.uzb{
-    border-right: 1px solid #EB5569;
-    padding-right: 71px;
+.covid-item__healed{
+    display: flex;
+    align-items: center;
 }
-.cases{
-    border-right: 1px solid #F4CCD1;
-    padding-right: 42px;
+.covid-item__healed::before{
+    background-image: url(../images/cil_smile.png);
 }
-.cases p{
-    color: #DB0000
+
+.covid-item__dead{
+    display: flex;
+    align-items: center;
 }
-.recovered p{
+.covid-item__dead::before{
+    background-image: url(../images/stop.png);
+}
+.covid-info__text-case{
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #DB0000;
+}
+.covid-info__wrapper{
+    margin-left: 17px;
+    margin-right: 42px;
+}
+.covid-info__text-healed{
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
     color: #05B135;
 }
-.recovered{
-    border-right: 1px solid #F4CCD1;
-    padding-right: 39px; 
+
+.covid-info__number{
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
 }
+
+.covid-info__text-dead{
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+}
+
+
+
+
+
+
+
 .site-main{
     display: grid;
     grid-template-columns: repeat(3,386px);
