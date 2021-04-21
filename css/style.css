@@ -1,5 +1,232 @@
-ㅤ, [21 Apr 2021 at 12:48:54]:
-d{
+html{
+    box-sizing: border-box;
+}
+*,
+*::after
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434343;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* SITE HEADER */
+.site-header-wrapper{
+    background-color: #F6F6F9;
+    padding: 44px 0 23px;
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.header-top-left{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.header-top-right{
+    display: flex;
+    align-items: center;
+}
+
+.search-btn{
+    background-color: #fff;
+    padding: 11px;
+    border-radius: 5px;
+    border: none;
+}
+.search-img{
+    display: block;
+    
+    
+}
+.lang-btn{
+    padding: 9px 12px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-left: 22px;
+}
+.lang-btn__img{
+    border-radius: 50%;
+    transform: translateY(3px);
+}
+
+.follow-btn{
+    padding: 10px 12px;
+    background:linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px; 
+    margin-left: 24px;
+}
+.follow-btn:hover{
+    background:linear-gradient(90deg, #37AEE2 15.07%,  #1E96C8 85.96%);
+}
+.follow-link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+.follow-link::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 8px;  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(..//images/telegram-icon.png);
+}
+.currence-brand{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #285193;
+    margin-right: 5px;
+}
+.currence-text{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 12px;
+    color: #434343;
+    margin-right: 15px;
+}
+/* LOGO */
+.logo{
+    display: block;
+}
+.logo-link{
+    padding: 3px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 23px;
+}
+/* SITENAV */
+.header-bottom{
+    margin-bottom: 18px;
+}
+.sitenav{
+    padding: 22px 25px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+    border-radius: 5px;
+}
+.sitenav-list{
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+}
+.sitenav-link{
+    text-decoration: none;
+    color: #515151;
+}
+.sitenav-link:hover{
+    color: #295093;
+}
+.sitenav-item{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    margin-right: 25px;
+}
+/* MAIN */
+main{
+    padding: 22px 0 38px;
+}
+
+
+/* COVID */
+
+.covid-stats__container{
+    padding: 30px 35px;
+    background-color:#F6F6F9 ;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+.covid-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.covid-item__info{
+    width: 371px;
+    display: flex;
+    align-items: center;
+}
+.covid-info__title{
+    margin: 0;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.covid-item::before{
+    content: "";
+    display: block;
+    width: 43px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-left: 29px;
+}
+.covid-item__info::before{
+    background-image: url(../images/covid19.png);
+}
+.covid-item__case{
+    display: flex;
+    align-items: center;
+}
+.covid-item__case::before{
+    background-image: url(../images/corona-red.png);
+}
+
+.covid-item__healed{
+    display: flex;
+    align-items: center;
+}
+.covid-item__healed::before{
+    background-image: url(../images/cil_smile.png);
+}
+
+.covid-item__dead{
+    display: flex;
+    align-items: center;
+}
+.covid-item__dead::before{
+    background-image: url(../images/stop.png);
+}
+.covid-info__text-case{
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #DB0000;
+}
+.covid-info__wrapper{
+    margin-left: 17px;
+    margin-right: 42px;
+}
+.covid-info__text-healed{
     margin: 0;
     font-weight: normal;
     font-size: 18px;
@@ -213,10 +440,7 @@ time{
     margin-left: 284px;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 17
-
-ㅤ, [21 Apr 2021 at 12:48:54]:
-px;
+    font-size: 17px;
     line-height: 20px;
     color: #FFFFFF;
     transition: ease 0.4s;
