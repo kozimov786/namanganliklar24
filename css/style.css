@@ -136,7 +136,8 @@ body{
     text-decoration: none;
     color: #515151;
 }
-.sitenav-link:hover{
+.sitenav-link:hover,
+.sitenav-link:active{
     color: #295093;
 }
 .sitenav-item{
@@ -344,7 +345,7 @@ time{
 
 .news-lastest{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 38px;
 }
 .news-info{
