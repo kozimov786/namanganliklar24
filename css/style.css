@@ -784,6 +784,7 @@ textarea{
 /* MODAL_STYLES */
 
 .modal{
+    transform: translateY(-100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -791,6 +792,7 @@ textarea{
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+    transition: 0.3s ease;
 }
 .modal-dialog{
     width: 100%;
@@ -817,6 +819,7 @@ textarea{
     color: #295093;
 }
 .modal-btn{
+    
     width: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -827,3 +830,20 @@ textarea{
     right: 10px;
     cursor: pointer;
 }
+.show-modal{
+    display: block;
+    transform: translateY(0);
+}
+
+
+window.addEventListener('DOMContentLoaded',()=>{
+    let openModal = document.querySelector('.follow-btn')
+    let closeModal = document.querySelector('.close-btn')
+    openModal.addEventListener('click',()=>{
+        document.querySelector('.modal').classList.add('show-modal')
+    })
+    closeModal.addEventListener('click',()=>{
+        document.querySelector('.modal').classList.remove('show-modal')
+    })
+    
+})
